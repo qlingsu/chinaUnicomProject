@@ -1,0 +1,30 @@
+{
+  "id": "2035501",
+  "name": "集中集客订单中心",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "中国联通外包",
+  "glyphs": [
+    {
+      "icon_id": "7235211",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4397831",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "6234166",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}
