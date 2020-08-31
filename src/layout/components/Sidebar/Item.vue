@@ -17,7 +17,7 @@ export default {
     const vnodes = []
 
     if (icon) {
-      console.log("icon = ",icon);
+      // console.log("icon = ",icon);
       if (icon.includes('el-icon')) {
         vnodes.push(<i class={[icon, 'sub-el-icon']} />)
       } else {
@@ -28,7 +28,7 @@ export default {
     if (title) {
       vnodes.push(<span slot='title'>{(title)}</span>)
     }
-    console.log("vnodes = ",vnodes);
+    // console.log("vnodes = ",vnodes);
     return vnodes
   }
 }
