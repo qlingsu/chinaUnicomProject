@@ -1,0 +1,138 @@
+.bussiness-total {
+    height: 100%;
+    background-color: rgba(241, 241, 241);
+    min-height: calc(100% - 100px);
+}
+
+.el-step.is-horizontal .el-step__line {
+    left: 90px;
+}
+
+.el-step__icon.is-text {
+    border: 1px solid #ff7745;
+    font-weight: normal;
+
+    color: white;
+    background-color: rgb(255, 119, 69);
+}
+
+.el-step__head {
+    width: 27%;
+    line-height: 38px;
+}
+
+.el-step.is-horizontal {
+    display: flex;
+    flex-basis: auto !important;
+}
+
+.el-step__title {
+    width: 125px;
+}
+
+.el-step__main {
+    margin-left: 10px;
+}
+
+.is-success .is-text {
+    color: #ff7745;
+    background-color: #ffffff;
+    border: 1px solid #ff7745;
+}
+
+.el-step__title.is-success {
+    color: black;
+}
+
+.middle-height-min {
+    height: 475px;
+}
+
+.middle-height-max {
+    height: 700px;
+}
+
+.star::before {
+    content: "*";
+    color: red;
+    padding-left: 2px;
+    font-style: normal;
+    // position: absolute;
+    text-align: center;
+}
+
+.create-button {
+    border: 1px solid #ff7745;
+    background-color: #ff7745;
+    width: 53px;
+    height: 31px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
+.cancle-button{
+    border: 1px solid #C0C4CC;
+    background-color: white;
+    width: 53px;
+    height: 31px;
+    letter-spacing: 5px;
+    color: #C0C4CC;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
+.step-button-white{
+    border: 1px solid #ff7745;
+    background-color: white;
+    width: 145px;
+    height: 35px;
+    color: #ff7745;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
+.step-button-orange{
+    border: 1px solid #ff7745;
+    background-color: #ff7745;
+    width: 145px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
+.form-container {
+    // margin-bottom: 6px !important;
+    display: flex;
+    width: 35%;
+
+    .form-label {
+        line-height: 30px;
+        position: relative;
+        width: 20%;
+    }
+}
+
+// .el-input
+.el-input__inner {
+    border: 1px solid #d2d2d2 !important;
+    line-height: 34px !important;
+    height: 34px !important;
+}
+
+.form-input {
+    margin-left: 10px;
+    width: 155px;
+    input {
+        height: 32px;
+        line-height: 32px;
+    }
+}
+.el-input--suffix .el-input__inner{
+    font-size: 13px;
+}
+.el-input {
+    font-size: 13px;
+}
