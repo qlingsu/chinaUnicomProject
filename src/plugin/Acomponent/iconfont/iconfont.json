@@ -1,16 +1,30 @@
 {
-  "id": "1945242",
-  "name": "南宁政务审批APP",
+  "id": "2035501",
+  "name": "集中集客订单中心",
   "font_family": "iconfont",
   "css_prefix_text": "icon",
-  "description": "",
+  "description": "中国联通外包",
   "glyphs": [
+    {
+      "icon_id": "4933267",
+      "name": "对号",
+      "font_class": "duihao",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    },
     {
       "icon_id": "52716",
       "name": "人员介绍",
       "font_class": "mine",
       "unicode": "e62b",
       "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "609192",
+      "name": "箭头",
+      "font_class": "back",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
     },
     {
       "icon_id": "1013076",
@@ -20,6 +34,34 @@
       "unicode_decimal": 58979
     },
     {
+      "icon_id": "2279234",
+      "name": "箭头",
+      "font_class": "right-arrow",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "2279452",
+      "name": "箭头",
+      "font_class": "down-arrow",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2279512",
+      "name": "箭头",
+      "font_class": "up-arrow",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "6626333",
+      "name": "叹号",
+      "font_class": "tanhao",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
       "icon_id": "8436312",
       "name": "箭头",
       "font_class": "youjiantou",
@@ -27,11 +69,11 @@
       "unicode_decimal": 59035
     },
     {
-      "icon_id": "16249582",
+      "icon_id": "15925372",
       "name": "箭头",
-      "font_class": "zuojiantou",
-      "unicode": "e6be",
-      "unicode_decimal": 59070
+      "font_class": "front-copy",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
     },
     {
       "icon_id": "16104523",
@@ -69,46 +111,11 @@
       "unicode_decimal": 58886
     },
     {
-      "icon_id": "6626333",
-      "name": "叹号",
-      "font_class": "tanhao",
-      "unicode": "e644",
-      "unicode_decimal": 58948
-    },
-    {
-      "icon_id": "15925372",
+      "icon_id": "16249582",
       "name": "箭头",
-      "font_class": "front-copy",
-      "unicode": "e6bd",
-      "unicode_decimal": 59069
-    },
-    {
-      "icon_id": "609192",
-      "name": "箭头",
-      "font_class": "back",
-      "unicode": "e6bc",
-      "unicode_decimal": 59068
-    },
-    {
-      "icon_id": "2279234",
-      "name": "箭头",
-      "font_class": "right-arrow",
-      "unicode": "e62c",
-      "unicode_decimal": 58924
-    },
-    {
-      "icon_id": "2279452",
-      "name": "箭头",
-      "font_class": "down-arrow",
-      "unicode": "e631",
-      "unicode_decimal": 58929
-    },
-    {
-      "icon_id": "2279512",
-      "name": "箭头",
-      "font_class": "up-arrow",
-      "unicode": "e633",
-      "unicode_decimal": 58931
+      "font_class": "zuojiantou",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
     },
     {
       "icon_id": "16529432",
@@ -116,6 +123,27 @@
       "font_class": "down",
       "unicode": "e6bf",
       "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "7235211",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4397831",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "6234166",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e629",
+      "unicode_decimal": 58921
     }
   ]
 }
