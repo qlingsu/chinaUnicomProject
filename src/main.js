@@ -12,6 +12,8 @@ import '@/styles/index.scss' // global css
 
 import SvgIcon from '@/components/SvgIcon'// svg component
 Vue.component('svg-icon', SvgIcon)// register globally
+import Acomponent from "@/plugin/Acomponent";
+Vue.use(Acomponent);
 
 store.dispatch('permission/generateRoutes').then(()=>{
   console.log("generateRoutes done")

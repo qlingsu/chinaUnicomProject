@@ -1,0 +1,30 @@
+.a-info-card-div {
+    width: 90%;
+    box-shadow: 0 0 15px 8px rgba(120, 181, 255, 0.1);
+    border-radius: 5px;
+    height: 200px;
+    margin: auto;
+    background: url('./img/su_bg_pic.png') no-repeat 95% 15px, linear-gradient(to bottom, #c7e5ff, #fff, #fff);
+    background-size: 30%;
+}
+
+.a-total-name-number {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.a-total-cards-line {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    display: table;
+}
+
+.a-info-card-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+}

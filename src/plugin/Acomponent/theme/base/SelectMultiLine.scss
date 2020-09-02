@@ -1,0 +1,30 @@
+.a-select-multi-line {
+}
+.a-select-option-multi-line {
+  /* position: fixed;
+  background: white;
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap; */
+  position: absolute;
+  flex-wrap: wrap;
+  width: 100%;
+  left: 0;
+  display: flex;
+  background: #fff;
+}
+.a-select-option-selected {
+  color: #2785e7;
+  line-height: 50px;
+  text-align: center;
+}
+.a-select-option-line:hover {
+  background-color: #2785e7;
+  color: #000;
+  outline: none;
+  border: none;
+}
+.a-select-option-line::-ms-expand {
+  display: none;
+}

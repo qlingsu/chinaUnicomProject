@@ -1,0 +1,176 @@
+body {
+  font: 500 14px/1.5 Arial, 微软雅黑, Tahoma, Helvetica, sans-serif;
+  color: #141414;
+  box-sizing: border-box;
+  background: #edf8ff;
+}
+ul,li,p{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+  list-style: none;
+}
+a,a:hover{
+  text-decoration: none;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.display-table-cell {
+  display: table-cell;
+}
+
+.vertical-b {
+  vertical-align: bottom;
+}
+
+.c_orange {
+  color: #ff802b;
+}
+
+.c_blue {
+  color: #2c7cfc;
+}
+.c_blue_deep {
+  color: #345180;
+}
+.c_gray {
+  color: #7b7b7b;
+}
+
+/*-------------- 文本样式---------------*/
+.f0p {
+  font-size: 0px;
+}
+
+.f6p {
+  font-size: 6px;
+}
+
+.f10p {
+  font-size: 10px;
+}
+
+.f12p {
+  font-size: 12px;
+}
+
+.f13p {
+  font-size: 13px;
+}
+
+.f14p {
+  font-size: 14px;
+}
+
+.f15p {
+  font-size: 15px;
+}
+
+.f16p {
+  font-size: 16px;
+}
+
+.f17p {
+  font-size: 17px;
+}
+
+.f18p {
+  font-size: 18px;
+}
+
+.f20p {
+  font-size: 20px;
+}
+
+.f24p {
+  font-size: 24px;
+}
+
+.f25p {
+  font-size: 25px;
+}
+
+.f40p {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.f50p {
+  font-size: 50px;
+}
+
+.fw {
+  font-weight: bold;
+}
+
+.fi {
+  font-style: italic;
+}
+
+.fs {
+  text-decoration: line-through;
+}
+
+.fu {
+  text-decoration: underline;
+}
+
+.indent {
+  text-indent: 24px;
+}
+/* Margins
+----------------------------------------------------------------------------------------------------*/
+.mar_0p { margin: 0px; }
+.mar_10p { margin: 10px; }
+.mar_10p0p { margin: 10px 0px; }
+.mar_5p30p { margin: 5px 30px; }
+.mar_5p20p { margin: 5px 20px; }
+
+.mar_t5p { margin-top: 5px; }
+.mar_t7p { margin-top: 7px; }
+.mar_t9p { margin-top: 9px; }
+.mar_t10p { margin-top: 10px; }
+.mar_t15p { margin-top: 15px; }
+.mar_t20p { margin-top: 20px !important; }
+.mar_t30p { margin-top: 30px; }
+.mar_t56p { margin-top: 56px; }
+
+.mar_b5p { margin-bottom: 5px; }
+.mar_b10p { margin-bottom: 10px; }
+.mar_b15p { margin-bottom: 15px; }
+.mar_b20p { margin-bottom: 20px; }
+
+.mar_l5p { margin-left: 5px; }
+.mar_l10p { margin-left: 10px !important; }
+.mar_l15p { margin-left: 15px; }
+.mar_l20p { margin-left: 20px; }
+.mar_l25p { margin-left: 20px; }
+.mar_l30p { margin-left: 200px; }
+.mar_l90p { margin-left: 90px; }
+
+.mar_r5p { margin-right: 5px; }
+.mar_r10p { margin-right: 10px !important; }
+.mar_r20p { margin-right: 20px; }
+
+/********框架*******/
+.panel-box {
+  width: 90%;
+  background: #fff;
+  margin:20px auto 0;
+  padding:15px 10px;
+  box-sizing: border-box;
+}
