@@ -1,0 +1,126 @@
+@import './variables.scss';
+
+.main-page_change{
+  background-color: #f1f1f1;
+  height: 100%;
+  min-height: calc(100% - 100px);
+  .create-button {
+    border: 1px solid #ff7745;
+    background-color: #ff7745;
+    width: 53px;
+    height: 31px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+  }
+  .cancle-button{
+      border: 1px solid #C0C4CC;
+      background-color: white;
+      width: 53px;
+      height: 31px;
+      letter-spacing: 5px;
+      color: #C0C4CC;
+      text-align: center;
+      border-radius: 5px;
+      padding: 0 0 0 6px;
+  }
+  .is-success .is-text {
+    color: #ff7745;
+    background-color: #ffffff;
+    border: 1px solid #ff7745;
+  }
+
+  .middle-height-min {
+      height: 475px;
+  }
+
+  .middle-height-max {
+      height: 700px;
+  }
+
+  .star::before {
+      content: "*";
+      color: red;
+      padding-left: 2px;
+      font-style: normal;
+      // position: absolute;
+      text-align: center;
+  }
+  .step-button-orange{
+    border: 1px solid #ff7745;
+    background-color: #ff7745;
+    width: 145px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+  }
+  .form-container {
+      display: flex;
+      width: 35%;
+      .form-label {
+          line-height: 30px;
+          position: relative;
+          width: 130px;
+          text-align: right;
+      }
+  }
+  .search-btn-wrap{
+    text-align: center;
+    width: 100%;
+  }
+  // .el-input
+  .el-input__inner {
+      border: 1px solid #d2d2d2 !important;
+      line-height: 34px !important;
+      height: 34px !important;
+  }
+
+  .form-input {
+      margin-left: 10px;
+      width: 155px;
+      input {
+          height: 32px;
+          line-height: 32px;
+      }
+  }
+  .el-input--suffix .el-input__inner{
+      font-size: 13px;
+  }
+  .el-input {
+      font-size: 13px;
+  }
+  .tableRadio tr th.is-leaf .el-checkbox {
+    display: none;
+  }
+  .tableRadio .el-checkbox__inner {
+    border-radius: 50%;
+  }
+  .el-button--text:hover, .el-button--text:focus {
+    color: $menuActiveText;
+  }
+  .el-button--text {
+    color: $menuActiveText;
+  }
+  // 分页组件样式
+  .paginationCss {
+    padding-top: 30px;
+    text-align: right;
+    padding-bottom: 10px;
+  }
+  .el-pager li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #999;
+  }
+  .footer-btn-wrap{
+    padding-top: 30px;
+    text-align: right;
+    padding-bottom: 10px;
+    background-color: #fff;
+  }
+}
