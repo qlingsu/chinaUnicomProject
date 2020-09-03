@@ -3,14 +3,14 @@
 		<!-- 顶部 -->
 		<div style="height:45px;width:100%">
 			<!-- :active="1":space="200"  align-center -->
-			<div style="width:60%;">
+			<!-- <div style="width:60%;">
 				<el-steps :active="active" finish-status="success">
 					<el-step title="选择客户"></el-step>
 					<div style="width: 400px; height: 20px;    position: absolute; left: 30%; border-bottom: 1px solid rgb(218, 218, 218);"></div>
 					<el-step style="    max-width: 50%; position: absolute; left: 64%;" title="批量信息录入"></el-step>
 				</el-steps>
-			</div>
-
+			</div> -->
+			<a-time-line :items="items" :current="current"></a-time-line>
 		</div>
 		<!--  -->
 		<!-- 中间部分 -->
@@ -92,6 +92,17 @@ import './bussinessAccept.scss';
 export default {
 	data() {
 		return {
+			current:1,
+			items: [
+				{
+					step: 1,
+					name: "选择客户"
+				},
+				{
+					step: 2,
+					name: "批量信息录入"
+				}
+			],
 			active: 0,
 			// 搜索传参
 			customerTypeList: [
@@ -127,6 +138,15 @@ export default {
 		},
 		// 确认提交按钮
 		submit() {
+
+		},
+		create(){
+
+		},
+		search(){
+
+		},
+		reset(){
 
 		}
 	}
