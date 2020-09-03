@@ -14,9 +14,9 @@
 		</div>
 		<!--  -->
 		<!-- 中间部分 -->
-		<div style="width:98%;margin-left:1%; background-color: #ffffff;" :class=" current=='1' ? 'middle-height-min' : 'middle-height-max'">
+		<div style="width:98%;margin-left:1%; " :class=" current=='1' ? 'middle-height-min' : 'middle-height-max'">
 			<!--  -->
-			<div v-if="current=='1'" style="width:100%;height:100%;    padding: 10px 20px ">
+			<div v-if="current=='1'" style="width:100%;height:100%;  background-color: #ffffff;  padding: 10px 20px ">
 				<div style="height:45px;width:100%;display: flex;">
 					<div style=" width: 94%; font-weight: bold;font-size: 17px;">
 						<div><i class="star"></i>选择客户</div>
@@ -63,7 +63,7 @@
 					</div>
 
 				</div>
-				<div class='tableContent' >
+				<div class='tableContent'>
 					<el-table class="table-pc" ref="multipleTable" :data="customerList" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange" :header-cell-style="{
                                     'background-color': '#F7F6FB',
                                     'color': 'black',
@@ -79,7 +79,7 @@
 							</template>
 						</el-table-column> -->
 						<el-table-column width="45" type="selection" align="center"></el-table-column>
-						<el-table-column prop="customerId" label="客户集团编号" width="180" show-overflow-tooltip  align="center"></el-table-column>
+						<el-table-column prop="customerId" label="客户集团编号" width="180" show-overflow-tooltip align="center"></el-table-column>
 						<el-table-column prop="name" label="客户名称" width="150" show-overflow-tooltip align="center"></el-table-column>
 						<el-table-column prop="provinceId" label="省份客户编码" width="150" show-overflow-tooltip align="center"></el-table-column>
 						<el-table-column prop="cbssCustomerId" label="cBSS客户编码" width="150" show-overflow-tooltip align="center"></el-table-column>
@@ -88,8 +88,9 @@
 						<el-table-column prop="socialCreditCode" label="统一社会信用代码" align="center"></el-table-column>
 						<el-table-column prop="taxpayer" label="是否一般纳税人" align="center"></el-table-column>
 						<el-table-column label="操作" align="center">
-							<template slot-scope="scope"  >
-								<div @click="customerDetail(scope.row)" style="color:rgb(65,161,254); cursor: pointer;letter-spacing: 3px;"><span >详情</span></div></template>
+							<template slot-scope="scope">
+								<div @click="customerDetail(scope.row)" style="color:rgb(65,161,254); cursor: pointer;letter-spacing: 3px;"><span>详情</span></div>
+							</template>
 						</el-table-column>
 					</el-table>
 
@@ -99,7 +100,100 @@
 				</div>
 
 			</div>
-			<div v-else-if="current=='2'">
+			<!-- 批量信息录入 -->
+			<div v-else-if="current =='2'">
+				<!-- 客户信息 -->
+				<div style="height:85px;width:100%;padding: 10px 20px;background-color: #ffffff;">
+					<div style=" width: 100%; font-size: 17px;">客户信息</div>
+					<div style="width:100%;margin-top: 7px;">
+						<el-row :gutter="40">
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="width:100%;height:100%;margin-left: 50px;">
+										集团客户名称：<span style="color:rgb(65,161,254)">{{selectedCustomer.name}}</span>
+									</div>
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="width:100%;height:100%;margin-left: 50px;">
+										集团客户编号：{{selectedCustomer.customerId}}
+									</div>
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="width:100%;height:100%;margin-left: 50px;">
+										集团归属地：{{selectedCustomer.city}}
+									</div>
+								</div>
+							</el-col>
+
+						</el-row>
+					</div>
+				</div>
+
+				<!-- 客户联系人/经办人/代理人 -->
+
+				<div style=" height: 150px; width: 100%; margin-top: 10px; background-color: #ffffff;padding: 10px 20px;">
+					<div style=" width: 100%; font-size: 17px;display:flex">
+						<div style="width:65%">客户联系人/经办人/代理人信息</div>
+						<div style="width:35%;display:flex">
+							<el-checkbox-group v-model="personerCheckList">
+								<el-checkbox label="客户联系人信息"></el-checkbox>
+								<el-checkbox label="经办人信息"></el-checkbox>
+								<el-checkbox label="代理人信息"></el-checkbox>
+							</el-checkbox-group>
+						</div>
+					</div>
+					<!-- 画中间显示的选择人的tab -->
+					<div style="display: flex;margin-top: 10px;border-bottom: 1px solid #f1f1f1;">
+						<div :class='selectCustomerType == "1" ? "selectedCustomerType" : "unselectedCustomerType" ' >客户联系人信息</div>
+						<div :class='selectCustomerType == "1" ?  "unselectedCustomerType" :  "selectedCustomerType"' >经办人信息</div>
+					</div>
+					<!--  -->
+					<div style="width:100%;margin-top: 7px;">
+						<el-row :gutter="40">
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>联系人姓名：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="请输入客户名称" />
+										</div>
+									</div>
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>联系人电话：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="请输入客户名称" />
+										</div>
+									</div>
+
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>联系人邮箱：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="请输入客户名称" />
+										</div>
+									</div>
+								</div>
+							</el-col>
+
+						</el-row>
+					</div>
+				</div>
+				<!-- 发展人信息 -->
+
+				<!-- 附件及备注  -->
+
+				<!-- 商品信息列表  -->
 
 			</div>
 
@@ -111,8 +205,8 @@
 				<el-button class='step-button-orange' style="margin-top: 12px;" @click="next">下一步:批量信息录入</el-button>
 			</div>
 			<div v-else style="height:100%;width:100%;display: flex;">
-				<el-button style="margin-top: 12px; margin-left: 70%;" @click="next">上一步:选择客户</el-button>
-				<el-button style="margin-top: 12px;" @click="submit">确认提交</el-button>
+				<el-button class='step-button-white' style="margin-top: 12px; margin-left: 70%;" @click="next">上一步:选择客户</el-button>
+				<el-button class='step-button-grey' style="margin-top: 12px;" @click="submit">确认提交</el-button>
 			</div>
 
 		</div>
@@ -126,7 +220,8 @@ import './bussinessAccept.scss';
 export default {
 	data() {
 		return {
-			current: 1,
+			// 第一页的
+			current: 2,
 			items: [
 				{
 					step: 1,
@@ -182,6 +277,13 @@ export default {
 			startRecord: 1,
 			total: 0,
 			// 
+			// 选择的客户信息
+			selectedCustomer: {},
+
+			// 第二页的
+			// 信息录入的参数
+			personerCheckList: ['经办人信息'],
+			selectCustomerType: "1"
 		}
 	},
 	methods: {
@@ -190,17 +292,18 @@ export default {
 		},
 		// 初始化方法
 		init() {
-			this.customerList.push({
+			var customerTwo = {
 				customerId: '5151051365110003799',
-				name: '安百拓贸易有限公司',
+				name: '广汽本田有限公司',
 				provinceId: '2019101018782731',
 				cbssCustomerId: '5116101013135230',
-				city: '广东-广州',
+				city: '广东-佛山',
 				certificateNumber: '620102881219098574',
 				socialCreditCode: '012068',
 				taxpayer: '是',
 			}
-			)
+			this.customerList.push(customerTwo)
+			this.selectedCustomer = customerTwo;
 			for (var i = 0; i <= 9; i++) {
 				console.log(i)
 				var index = i + 1;
@@ -236,7 +339,7 @@ export default {
 
 		},
 		//客户详情按钮 
-		customerDetail(){
+		customerDetail() {
 			console.log('详情按钮')
 		},
 		create() {

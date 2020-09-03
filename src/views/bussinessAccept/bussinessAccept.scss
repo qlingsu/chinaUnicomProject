@@ -96,6 +96,17 @@
     padding: 0 0 0 6px;
 }
 
+.step-button-grey {
+    border: 1px solid rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);
+    width: 100px;
+    height: 35px;
+    color: rgb(215, 215, 215);
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
+
 .step-button-orange {
     border: 1px solid #ff7745;
     background-color: #ff7745;
@@ -144,7 +155,7 @@
     font-size: 13px;
 }
 
-.el-checkbox__inner {
+.table-pc .el-checkbox__inner {
     border-radius: 50%;
 }
 
@@ -162,6 +173,52 @@
 .tableContent {
     width: 100%;
     height: 635px;
+}
+
+.el-row {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.el-col {
+    border-radius: 4px;
+}
+
+.bg-purple-dark {
+    // background: #99a9bf;
+}
+
+.bg-purple {
+    // background: #d3dce6;
+}
+
+.bg-purple-light {
+    // background: #e5e9f2;
+}
+
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+
+.row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+.selectedCustomerType{
+    width: 110px;
+    text-align: center;
+    margin-left: 20px;
+    border-bottom: 2px solid orange;
+}
+.unselectedCustomerType{
+    width: 110px;
+    color: #606266;
+    text-align: center;
+    margin-left: 20px;
 }
 
 @media only screen and (min-width: 1800px) {
