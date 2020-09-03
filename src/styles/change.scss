@@ -123,4 +123,18 @@
     padding-bottom: 10px;
     background-color: #fff;
   }
+  .el-table__body tr:hover>td{
+    background-color:#fff9f9 !important;
+  }
+ 
+  .el-table__body tr.current-row>td{
+    background-color:#fff9f9 !important;
+  }
+  .el-button--primary.is-plain {
+    background: #fff !important;
+  }
+  .el-button--primary.is-plain:hover {
+    background: #fff !important;
+    color: $pink !important;
+  }
 }

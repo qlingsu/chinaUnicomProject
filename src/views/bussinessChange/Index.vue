@@ -48,8 +48,9 @@
         </div>
       </div>
       <div>
-        <div style="height:400px;overflow-y:auto;">
+        <div style="height:400px;overflow-y:auto;margin:0 20px;">
           <el-table
+            :header-cell-style="{background:'#eee',color:'#666'}"
             :data="tableData"
             highlight-current-row
             ref="selectableTable"
@@ -116,7 +117,7 @@
       </div>
     </div>
     <div class="footer-btn-wrap">
-      <el-button>选择默认账户（可选）</el-button>
+      <el-button type="primary" plain>选择默认账户（可选）</el-button>
       <el-button type="primary">下一步：批量信息录入</el-button>
     </div>
   </div>
