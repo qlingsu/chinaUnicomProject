@@ -6,6 +6,132 @@
   "description": "中国联通外包",
   "glyphs": [
     {
+      "icon_id": "16588055",
+      "name": "加号",
+      "font_class": "jiahao2",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "4933267",
+      "name": "对号",
+      "font_class": "duihao",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    },
+    {
+      "icon_id": "52716",
+      "name": "人员介绍",
+      "font_class": "mine",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "609192",
+      "name": "箭头",
+      "font_class": "back",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "1013076",
+      "name": "人",
+      "font_class": "wo",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "2279234",
+      "name": "箭头",
+      "font_class": "right-arrow",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "2279452",
+      "name": "箭头",
+      "font_class": "down-arrow",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2279512",
+      "name": "箭头",
+      "font_class": "up-arrow",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "6626333",
+      "name": "叹号",
+      "font_class": "tanhao",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "8436312",
+      "name": "箭头",
+      "font_class": "youjiantou",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "15925372",
+      "name": "箭头",
+      "font_class": "front-copy",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "16104523",
+      "name": "风控",
+      "font_class": "fengkong",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "16104524",
+      "name": "审批",
+      "font_class": "shenpi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "16104525",
+      "name": "图表",
+      "font_class": "tubiao",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "16104526",
+      "name": "效能",
+      "font_class": "xiaoneng",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "16105337",
+      "name": "导览",
+      "font_class": "daolan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "16249582",
+      "name": "箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "16529432",
+      "name": "箭头",
+      "font_class": "down",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
       "icon_id": "7235211",
       "name": "用户",
       "font_class": "yonghu",
