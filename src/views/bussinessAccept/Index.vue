@@ -134,7 +134,6 @@
 				</div>
 
 				<!-- 客户联系人/经办人/代理人 -->
-
 				<div style=" height: 150px; width: 100%; margin-top: 10px; background-color: #ffffff;padding: 10px 20px;">
 					<div style=" width: 100%; font-size: 17px;display:flex">
 						<div style="width:65%">客户联系人/经办人/代理人信息</div>
@@ -148,12 +147,12 @@
 					</div>
 					<!-- 画中间显示的选择人的tab -->
 					<div style="display: flex;margin-top: 10px;border-bottom: 1px solid #f1f1f1;">
-						<div :class='selectCustomerType == "1" ? "selectedCustomerType" : "unselectedCustomerType" ' >客户联系人信息</div>
-						<div :class='selectCustomerType == "1" ?  "unselectedCustomerType" :  "selectedCustomerType"' >经办人信息</div>
+						<div :class='selectCustomerType == "1" ? "selectedCustomerType" : "unselectedCustomerType" '>客户联系人信息</div>
+						<div :class='selectCustomerType == "1" ?  "unselectedCustomerType" :  "selectedCustomerType"'>经办人信息</div>
 					</div>
 					<!--  -->
 					<div style="width:100%;margin-top: 7px;">
-						<el-row :gutter="40">
+						<el-row :gutter="10">
 							<el-col :span="8">
 								<div class="grid-content bg-purple">
 									<div style="display:flex;margin-left: 50px;">
@@ -190,9 +189,110 @@
 					</div>
 				</div>
 				<!-- 发展人信息 -->
+				<div style=" height: 200px; width: 100%; margin-top: 10px; background-color: #ffffff;padding: 10px 20px;">
+					<div style=" width: 100%; font-size: 17px;display:flex">
+						<div style="width:65%">发展人信息</div>
+					</div>
+					<div style="width:100%;margin-top: 7px;">
+						<el-row :gutter="10">
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>发展人渠道名称：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-select class='' v-model="customerTypeSelected" placeholder="请选择">
+												<el-option v-for="item in customerTypeList" :key="item.value" :label="item.label" :value="item.value">
+												</el-option>
+											</el-select>
+										</div>
+									</div>
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>发展人姓名：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="发展人姓名" />
+										</div>
+									</div>
 
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>发展人渠道ID：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="发展人渠道ID" />
+										</div>
+									</div>
+								</div>
+							</el-col>
+
+						</el-row>
+						<el-row :gutter="10">
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>发展人员工ID：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="发展人员工ID" />
+										</div>
+									</div>
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>发展人联系方式：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-input class="form-input" maxlength="16" placeholder="发展人联系方式" />
+										</div>
+									</div>
+
+								</div>
+							</el-col>
+							<el-col :span="8">
+								<div class="grid-content bg-purple">
+									<div style="display:flex;margin-left: 50px;">
+										<label class="form-label" style="line-height: 34px;"><i class="star"></i>是否发送短信：</label>
+										<div style="width:65%;height:100%;display:flex;">
+											<el-select class='' v-model="messageFlag" placeholder="请选择">
+												<el-option v-for="item in messageFlagList" :key="item.value" :label="item.label" :value="item.value">
+												</el-option>
+											</el-select>
+										</div>
+									</div>
+								</div>
+							</el-col>
+
+						</el-row>
+					</div>
+				</div>
 				<!-- 附件及备注  -->
-
+				<!-- 这里设置有附件的时候的高度自动 -->
+				<div style=" height: 120px; width: 100%; margin-top: 10px; background-color: #ffffff;padding: 10px 20px;">
+					<div style=" width: 100%; font-size: 17px;display:flex">
+						<div style="width:65%">附件及备注</div>
+					</div>
+					<div style="width: 100%;display: flex;margin-top:7px;line-height: 20px;">
+						<span>附件：</span>
+						<div >
+							<i  class="iconfont iconmine" style="color: #ff7745;margin: 0 4px;" ></i>
+							新增附件</div>
+						<span style=" color: #606266;font-size: 10px;margin-left: 10px;">（附件类型：doc、xls、docx、xlsx、rar、zip、jpg、gif、jpeg、png、pdf文件大小不超过30M）</span>
+					</div>
+					<!-- 显示附件的一堆信息 -->
+					<div style="width:100%;margin-top: 7px;">
+					</div>
+					<div style="width:100%;margin-top: 7px;display:flex;">
+						<label class="form-label" style="line-height: 34px;">备注：</label>
+						<div style="width:65%;height:100%;display:flex;">
+							<el-input class="form-input large-input" maxlength="50" placeholder="可填写备注信息" />
+						</div>
+					</div>
+				</div>
 				<!-- 商品信息列表  -->
 
 			</div>
@@ -283,7 +383,17 @@ export default {
 			// 第二页的
 			// 信息录入的参数
 			personerCheckList: ['经办人信息'],
-			selectCustomerType: "1"
+			selectCustomerType: "1",
+			messageFlag: '1',
+			messageFlagList: [
+				{
+					value: '1',
+					label: '否'
+				}, {
+					value: '2',
+					label: '是'
+				}
+			],
 		}
 	},
 	methods: {

@@ -212,13 +212,16 @@
     width: 110px;
     text-align: center;
     margin-left: 20px;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid #ff7745;
 }
 .unselectedCustomerType{
     width: 110px;
     color: #606266;
     text-align: center;
     margin-left: 20px;
+}
+.form-input.large-input{
+    width: 550px;
 }
 
 @media only screen and (min-width: 1800px) {
